@@ -1,0 +1,342 @@
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette Éphémère</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5C8599;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #f5f5f5;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar img {
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-links a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .dropdown {
+            color: black;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #f5f5f5;
+        }
+
+        .main-image {
+            width: 80%;
+            max-width: 500px;
+            border: 5px solid #1C5D8A;
+            margin: 20px 0;
+        }
+
+        .description {
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .favorite-section {
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .favorite-section h2 {
+            color: #e1e1e1;
+        }
+
+        .highlighted-art {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .additional-artworks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .artwork {
+            text-align: center;
+        }
+
+        .artwork img {
+            width: 80%;
+            max-width: 300px;
+            border: 5px solid #1C5D8A;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .art-title {
+            font-weight: bold;
+            margin-top: 5px;
+            color: #f5f5f5;
+        }
+
+        .art-price {
+            color: #f5f5f5;
+        }
+
+        .about-section {
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            color: #e1e1e1;
+            margin-top: 30px;
+        }
+
+        .about-section h2 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .about-section p {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="logo.png" alt="Palette Éphémère Logo">
+        <div class="navbar-links">
+            <a href="#">Accueil</a>
+            <a href="#">Oeuvres</a>
+            <a href="#">Contacts</a>
+        </div>
+        <div class="dropdown">▼</div>
+    </div>
+
+    <h1>PALETTE EPHEMERE</h1>
+
+    <img src="main-image.jpg" alt="Main Artwork" class="main-image">
+
+    <div class="description">
+        <p>
+            L'art des papillons ne se limite pas à leur apparence, mais explore aussi les thèmes de la transformation, de la légèreté et de la fragilité de la vie. Chaque oeuvre présentée ici raconte une histoire, évoque des émotions et invite à la contemplation.
+        </p>
+    </div>
+
+    <div class="gallery">
+        <img src="piece1.jpg" alt="Oeuvre 1">
+        <img src="piece2.jpg" alt="Oeuvre 2">
+    </div>
+
+    <div class="favorite-section">
+        <h2>Nos pièces préférées du moment</h2>
+        <p>
+            Ces oeuvres ont attiré l'attention de nos amateurs d'art. Si vous en trouvez une qui vous plaît, ne passez pas à côté : achetez-la dès maintenant !
+        </p>
+        <img src="highlighted-art.jpg" alt="Flamme des Rayons" class="highlighted-art">
+        <p class="price">FLAMME DES RAYONS<br>2500 €</p>
+    </div>
+
+    <!-- Section pour les œuvres supplémentaires avec prix -->
+    <div class="additional-artworks">
+        <div class="artwork">
+            <img src="transcendance.jpg" alt="Transcendance">
+            <p class="art-title">TRANSCENDANCE</p>
+            <p class="art-price">1800 €</p>
+        </div>
+        
+        <div class="artwork">
+            <img src="a-sa-recherche.jpg" alt="À Sa Recherche">
+            <p class="art-title">A SA RECHERCHE</p>
+            <p class="art-price">2800 €</p>
+        </div>
+        
+        <div class="artwork">
+            <img src="liberte-ephemere.jpg" alt="Liberté Ephémère">
+            <p class="art-title">LIBERTE EPHEMERE</p>
+            <p class="art-price">1200 €</p>
+        </div>
+
+    <!-- Section "Qui sommes-nous ?" et "Que voulons-nous ?" -->
+    <div class="about-section">
+        <h2>QUI SOMMES-NOUS ?</h2>
+        <p>
+            Nichée au cœur de la ville, la galerie Palette Éphémère est un espace dédié à la découverte et à l'expérimentation artistique. 
+            Chaque exposition est une aventure unique, mettant en avant des artistes émergents et des œuvres temporaires qui défient les conventions.
+        </p>
+        
+        <h2>QUE VOULONS-NOUS ?</h2>
+        <!-- Section "Notre mission" et "Témoignages de nos clients" -->
+<div class="mission-section">
+    <p>
+        Notre mission est de célébrer l'art avec des papillons sous toutes ses formes, en offrant une plateforme pour les créations innovantes et souvent éphémères. 
+        Les visiteurs sont invités à plonger dans un univers en constante évolution, où chaque visite révèle de nouvelles surprises et inspirations.
+    </p>
+    <h2>Témoignages de nos clients</h2>
+    
+    <!-- Témoignages -->
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>"La palette éphémère est une expérience artistique surprenante à vivre. La galerie nous transporte dans un monde où les papillons sont mis à l'honneur."</p>
+            <p class="author">Dauphe Nana</p>
+        </div>
+        <div class="testimonial">
+            <p>"J'ai trouvé exactement l'œuvre qui me caractérisait et mon coup de cœur. Je vous la recommande aussi !"</p>
+            <p class="author">Boris WILSON</p>
+        </div>
+        <div class="testimonial">
+            <p>"Je suis tombée par hasard sur cette galerie et j’ai tout de suite été séduite par une œuvre inédite. Je recommande d’aller faire un tour !"</p>
+            <p class="author">Billy RAIL</p>
+        </div>
+    </div>
+</div>
+
+<!-- Section formulaire d'abonnement -->
+<div class="subscription-form">
+    <p>Vous voulez toujours rester informé ? Remplissez le formulaire suivant</p>
+    <label for="email">Adresse E-Mail</label>
+    <input type="email" id="email" placeholder="@gmail.com">
+        <!-- Formulaire de contact -->
+        <div class="contact-form">
+            
+            
+            
+            <form>
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Votre nom">
+                <button type="submit">Enregistrer</button>
+            </form>
+        </div>
+    
+        <!-- Informations des artistes et de l'équipe administrative -->
+        <div class="info-section">
+            <div class="artists">
+                <h3>Les Artistes:</h3>
+                <ul>
+                    <li>
+                        <strong>Léa Fournier</strong> <br>
+                        Spécialité : Peinture abstraite <br>
+                        Contact : lea.fournier.art@gmail.com
+                    </li>
+                    <li>
+                        <strong>Julien Dumas</strong> <br>
+                        Spécialité : Sculpture, photo <br>
+                        Contact : juliendumas.sculpture@yahoo.com
+                    </li>
+                    <li>
+                        <strong>Camille Laurent</strong> <br>
+                        Spécialité : Photographie <br>
+                        Contact : camillelaurent.photo@artmail.com
+                    </li>
+                    <li>
+                        <strong>Sophie Moreau</strong> <br>
+                        Spécialité : Installation multimédia <br>
+                        Contact : sophie.moreau.art@gmail.com
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="administrative-team">
+                <h3>L’Équipe administrative:</h3>
+                <ul>
+                    <li>
+                        <strong>Claire Martin</strong> <br>
+                        Rôle : Programmatrice exposition <br>
+                        Contact : clairemartin@paletteephemere.com
+                    </li>
+                    <li>
+                        <strong>Antoine Petit</strong> <br>
+                        Rôle : Responsable vente <br>
+                        Contact : antoinepetit@paletteephemere.com
+                    </li>
+                    <li>
+                        <strong>Élise Durand</strong> <br>
+                        Rôle : RH <br>
+                        Contact : elisedurand@paletteephemere.com
+                    </li>
+                    <li>
+                        <strong>Thomas Leroy</strong> <br>
+                        Rôle : Responsable Marketing <br>
+                        Contact : thomasleroy@paletteephemere.com
+                    </li>
+                    <li>
+                        <strong>Juliette Morel</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Informations de contact -->
+        <div class="contact-details">
+            <p>Adresse : 10 RUE DE LA REPUBLIQUE 75000 PARIS</p>
+            <p>Tel : 01.63.45.85.56</p>
+            <p>Fax : 01.63.45.78.52</p>
+            <p>Email : Paletteephe@gmail.com</p>
+            <p>Personne à contacter dans l’entreprise : Thomas Leroy</p>
+        </div>
+    
+</div>
+
+
+
+    </div>
+
+</body>
+</html>
+
+
+</body>
+</html>
