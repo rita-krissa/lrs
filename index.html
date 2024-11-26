@@ -3,169 +3,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="galerie.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palette Éphémère</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #5C8599;
-            color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .navbar {
-            width: 100%;
-            background-color: #f5f5f5;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar img {
-            width: 50px;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        .navbar-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .navbar-links a {
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .dropdown {
-            color: black;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-top: 20px;
-            color: #f5f5f5;
-        }
-
-        .main-image {
-            width: 80%;
-            max-width: 500px;
-            border: 5px solid #1C5D8A;
-            margin: 20px 0;
-        }
-
-        .description {
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .gallery {
-            display: flex;
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .gallery img {
-            width: 100px;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .favorite-section {
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .favorite-section h2 {
-            color: #e1e1e1;
-        }
-
-        .highlighted-art {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px 0;
-        }
-
-        .price {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .additional-artworks {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .artwork {
-            text-align: center;
-        }
-
-        .artwork img {
-            width: 80%;
-            max-width: 300px;
-            border: 5px solid #1C5D8A;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .art-title {
-            font-weight: bold;
-            margin-top: 5px;
-            color: #f5f5f5;
-        }
-
-        .art-price {
-            color: #f5f5f5;
-        }
-
-        .about-section {
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
-            color: #e1e1e1;
-            margin-top: 30px;
-        }
-
-        .about-section h2 {
-            color: #ffffff;
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-        .about-section p {
-            margin-top: 10px;
-            line-height: 1.6;
-        }
-    </style>
+    
 </head>
 <body>
-
+<header>
     <div class="navbar">
         <img src="logo.png" alt="Palette Éphémère Logo">
-        <div class="navbar-links">
+        <nav>
             <a href="#">Accueil</a>
             <a href="#">Oeuvres</a>
             <a href="#">Contacts</a>
-        </div>
+        </nav>
         <div class="dropdown">▼</div>
     </div>
-
+</header>
     <h1>PALETTE EPHEMERE</h1>
 
     <img src="main-image.jpg" alt="Main Artwork" class="main-image">
@@ -249,87 +103,7 @@
     <p>Vous voulez toujours rester informé ? Remplissez le formulaire suivant</p>
     <label for="email">Adresse E-Mail</label>
     <input type="email" id="email" placeholder="@gmail.com">
-        <!-- Formulaire de contact -->
-        <div class="contact-form">
-            
-            
-            
-            <form>
-                <label for="name">Nom</label>
-                <input type="text" id="name" placeholder="Votre nom">
-                <button type="submit">Enregistrer</button>
-            </form>
-        </div>
-    
-        <!-- Informations des artistes et de l'équipe administrative -->
-        <div class="info-section">
-            <div class="artists">
-                <h3>Les Artistes:</h3>
-                <ul>
-                    <li>
-                        <strong>Léa Fournier</strong> <br>
-                        Spécialité : Peinture abstraite <br>
-                        Contact : lea.fournier.art@gmail.com
-                    </li>
-                    <li>
-                        <strong>Julien Dumas</strong> <br>
-                        Spécialité : Sculpture, photo <br>
-                        Contact : juliendumas.sculpture@yahoo.com
-                    </li>
-                    <li>
-                        <strong>Camille Laurent</strong> <br>
-                        Spécialité : Photographie <br>
-                        Contact : camillelaurent.photo@artmail.com
-                    </li>
-                    <li>
-                        <strong>Sophie Moreau</strong> <br>
-                        Spécialité : Installation multimédia <br>
-                        Contact : sophie.moreau.art@gmail.com
-                    </li>
-                </ul>
-            </div>
-    
-            <div class="administrative-team">
-                <h3>L’Équipe administrative:</h3>
-                <ul>
-                    <li>
-                        <strong>Claire Martin</strong> <br>
-                        Rôle : Programmatrice exposition <br>
-                        Contact : clairemartin@paletteephemere.com
-                    </li>
-                    <li>
-                        <strong>Antoine Petit</strong> <br>
-                        Rôle : Responsable vente <br>
-                        Contact : antoinepetit@paletteephemere.com
-                    </li>
-                    <li>
-                        <strong>Élise Durand</strong> <br>
-                        Rôle : RH <br>
-                        Contact : elisedurand@paletteephemere.com
-                    </li>
-                    <li>
-                        <strong>Thomas Leroy</strong> <br>
-                        Rôle : Responsable Marketing <br>
-                        Contact : thomasleroy@paletteephemere.com
-                    </li>
-                    <li>
-                        <strong>Juliette Morel</strong>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    
-        <!-- Informations de contact -->
-        <div class="contact-details">
-            <p>Adresse : 10 RUE DE LA REPUBLIQUE 75000 PARIS</p>
-            <p>Tel : 01.63.45.85.56</p>
-            <p>Fax : 01.63.45.78.52</p>
-            <p>Email : Paletteephe@gmail.com</p>
-            <p>Personne à contacter dans l’entreprise : Thomas Leroy</p>
-        </div>
-    
 </div>
-
 
 
     </div>
