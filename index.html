@@ -5,17 +5,26 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="galerie.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palette Éphémère</title>
+    <title>Palette Éphémère</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     
 </head>
 <body>
     <header>
         <div class="navbar">
-            <img src="images/LOGO GALERIE 1.jpg" alt="Palette Éphémère Logo">
+            <img src="image site/LOGO GALERIE 1.jpg" alt="Palette Éphémère Logo">
             <nav>
                 <ul>
                     <a href="#">Accueil</a>
-                     <a href="#">Oeuvres</a>
+                    <a href="#">Oeuvres</a>
                     <a href="#">Contacts</a>
                 </ul>
             </nav>
@@ -24,7 +33,7 @@
     </header>
     <h1>PALETTE EPHEMERE</h1>
     <section>
-        <img src="images/Image 1.jpg" alt="image principale" class="main-image">
+        <img src="image site/Image 1.jpg" alt="image principale" class="main-image">
 
         <div class="description">
         <p>
@@ -32,68 +41,66 @@
         </p>
         </div>
     </section>
-    <section class="gallery">
-        <img src="images/Image 2.jpg" alt="Oeuvre 1">
-        <img src="images/Image 3.jpg" alt="Oeuvre 2">
+    <section>
+    <div class="gallery">
+        <img src="image site/Image 2.jpg" alt="Oeuvre 1">
+        <img src="image site/Image 3.jpg" alt="Oeuvre 2">
+    </div>
     </section>
     <section>
         <div class="favorite-section">
          <h2>Nos pièces préférées du moment</h2>
-            <p>
+            <p class="explication">
             Ces oeuvres ont attiré l'attention de nos amateurs d'art. Si vous en trouvez une qui vous plaît, ne passez pas à côté : achetez-la dès maintenant !
             </p>
-            <img src="images/Flame des rayons.jpg" alt="Flamme des Rayons" class="highlighted-art">
+            <img src="image site/Flame des rayons.jpg" alt="Flamme des Rayons" class="highlighted-art">
          <p class="price">FLAMME DES RAYONS<br>2500 €</p>
         </div>
     </section>
     <!-- Section pour les œuvres supplémentaires avec prix -->
     <section class="additional-artworks">
         <article class="artwork">
-            <img src="images/Transcendance.jpg" alt="Transcendance">
-            <p class="art-title">TRANSCENDANCE</p>
-            <p class="art-price">1800 €</p>
+            <img src="image site/Transcendance.jpg" alt="Transcendance">
+            <p class="art-title">TRANSCENDANCE<br>1800€</p>
         </article>
         
         <article class="artwork">
-            <img src="images/A sa recherche.jpg" alt="À Sa Recherche">
-            <p class="art-title">A SA RECHERCHE</p>
-            <p class="art-price">2800 €</p>
+            <img src="image site/A sa recherche.jpg" alt="À Sa Recherche">
+            <p class="art-title">A SA RECHERCHE<br>2800€</p>
         </article>
         
         <article class="artwork">
-            <img src="images/Liberté ephemère.jpg" alt="Liberté Ephémère">
-            <p class="art-title">LIBERTE EPHEMERE</p>
-            <p class="art-price">1200 €</p>
+            <img src="image site/Liberté ephemère.jpg" alt="Liberté Ephémère">
+            <p class="art-title">LIBERTE EPHEMERE<br>1200€</p>
         </article>
-
+    </section>
     <!-- Section "Qui sommes-nous ?" et "Que voulons-nous ?" -->
-    <div class="about-section">
+    <section class="about-section">
         <h2>QUI SOMMES-NOUS ?</h2>
         <p>
             Nichée au cœur de la ville, la galerie Palette Éphémère est un espace dédié à la découverte et à l'expérimentation artistique. 
             Chaque exposition est une aventure unique, mettant en avant des artistes émergents et des œuvres temporaires qui défient les conventions.
         </p>
-        
-        <h2>QUE VOULONS-NOUS ?</h2>
-        <!-- Section "Notre mission" et "Témoignages de nos clients" -->
-<section class="mission-section">
+     <div class="mission"> <!-- Section "Notre mission" et "Témoignages de nos clients" -->
+    <h2>QUE VOULONS-NOUS ?</h2>
     <p>
         Notre mission est de célébrer l'art avec des papillons sous toutes ses formes, en offrant une plateforme pour les créations innovantes et souvent éphémères. 
         Les visiteurs sont invités à plonger dans un univers en constante évolution, où chaque visite révèle de nouvelles surprises et inspirations.
     </p>
-    <h2>Témoignages de nos clients</h2>
-    
+     </div>
+    </section>
     <!-- Témoignages -->
     <section class="testimonials">
-        <div class="testimonial">
+        <h2>Témoignages de nos clients</h2>
+        <div class="testimonial1">
             <p>"La palette éphémère est une expérience artistique surprenante à vivre. La galerie nous transporte dans un monde où les papillons sont mis à l'honneur."</p>
             <p class="author">Dauphe Nana</p>
         </div>
-        <div class="testimonial">
+        <div class="testimonial2">
             <p>"J'ai trouvé exactement l'œuvre qui me caractérisait et mon coup de cœur. Je vous la recommande aussi !"</p>
             <p class="author">Boris WILSON</p>
         </div>
-        <div class="testimonial">
+        <div class="testimonial3">
             <p>"Je suis tombée par hasard sur cette galerie et j’ai tout de suite été séduite par une œuvre inédite. Je recommande d’aller faire un tour !"</p>
             <p class="author">Billy RAIL</p>
         </div>
